@@ -1,0 +1,21 @@
+{
+  "name": "23it089",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "connect-mongo": "^6.0.0",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.2",
+    "express-session": "^1.19.0",
+    "mongoose": "^9.11.0"
+  }
+}
