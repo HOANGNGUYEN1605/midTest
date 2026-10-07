@@ -1,0 +1,15 @@
+<h2>Quản Lý Sách (Đám Mây Phân Tán)</h2>
+
+<form action="/add" method="POST">
+    <input type="text" name="maSP" placeholder="Mã SP (Bắt đầu bằng 089)" required>
+    <input type="text" name="tenSach" placeholder="Tên sách" required>
+    <input type="number" name="giaGoc" placeholder="Giá gốc" required>
+    <button type="submit">Thêm Sách</button>
+</form>
+
+<h3>Danh sách sách hiện có:</h3>
+<ul>
+    {{#each books}}
+        <li><b>{{this.maSP}}</b> - {{this.tenSach}} - Giá gốc: {{this.giaGoc}} - Giá sau thuế: {{this.giaSauThue}}</li>
+    {{/each}}
+</ul>
